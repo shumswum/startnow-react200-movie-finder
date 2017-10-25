@@ -24,7 +24,7 @@ class MovieDetailContainer extends React.Component {
     const ApiCall = {
       type: "DETAIL_CALL",
       payload: axios.get(
-        `http://www.omdbapi.com/?apikey=8730e0e&i=${this.props.match.params.id}`
+        `https://www.omdbapi.com/?apikey=8730e0e&i=${this.props.match.params.id}`
       )
     };
 

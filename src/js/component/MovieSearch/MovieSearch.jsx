@@ -32,7 +32,7 @@ class MovieSearchContainer extends React.Component {
     const { dispatch } = this.props;
     const ApiCall = {
       type: 'CALL',
-      payload: axios.get(`http://www.omdbapi.com/?apikey=8730e0e&s=${this.props.input}`)
+      payload: axios.get(`https://www.omdbapi.com/?apikey=8730e0e&s=${this.props.input}`)
     };
 
     dispatch(ApiCall);
